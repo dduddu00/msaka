@@ -120,7 +120,7 @@
 								<!-- Product price-->
 								<span class="text-muted text-decoration-line-through">상시응모</span>
 								<br>
-								응모 기간 3/1 ~ 3/13
+								응모 기간 3/1 ~ 3/14
 							</div>
 						</div>
 						<!-- Product actions-->
