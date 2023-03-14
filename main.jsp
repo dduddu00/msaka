@@ -2,32 +2,31 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8" />
-<title>Happydraw!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
-        <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
-        <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
-		<noscript>
-			<link rel="stylesheet" type="text/css" href="css/nojs.css" />
-		</noscript>
-<script src="https://kit.fontawesome.com/e8f495f95b.js"
-	crossorigin="anonymous"></script>
-
-<!-- Favicon-->
-<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-<!-- Bootstrap icons-->
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
-<!-- Core theme CSS (includes Bootstrap)-->
-<link rel="stylesheet" href="./resources/css/styles.css" />
-</head>
-
+	<head>
+		<meta charset="utf-8" />
+		<title>Happydraw!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				<meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+				<meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+				<meta name="author" content="Codrops" />
+				<link rel="shortcut icon" href="../favicon.ico"> 
+				<link rel="stylesheet" type="text/css" href="css/demo.css" />
+				<link rel="stylesheet" type="text/css" href="css/style.css" />
+				<script type="text/javascript" src="./resources/js/modernizr.custom.28468.js"></script>
+				<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+				<noscript>
+					<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+				</noscript>
+		<script src="https://kit.fontawesome.com/e8f495f95b.js"
+			crossorigin="anonymous"></script>
+		
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<!-- Bootstrap icons-->
+		<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link rel="stylesheet" href="./resources/css/styles.css" />
+		</head>
 <body>
 	<!-- 상단바-->
 	<jsp:include page="menu.jsp" />
@@ -67,7 +66,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript" src="./resources/js/jquery.cslider.js"></script>
 	<script type="text/javascript">
 		$(function() {
 		
