@@ -2,6 +2,7 @@
 	position: relative;
 }
 .da-slide h2,
+.da-slide2 h2,
 .da-slide p,
 .da-slide .da-link,
 .da-slide .da-img{
@@ -9,7 +10,7 @@
 	opacity: 1;
 	left: 10%;
 }
-.da-slide .da-img{
+.da-slide .da-img .da-slide2{
 	left: 60%;
 }
 .da-dots,

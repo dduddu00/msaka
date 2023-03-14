@@ -5,7 +5,22 @@
 	position: relative;
 	margin: 30px auto;
 	overflow: hidden;
-	background: transparent url(../images/waves.gif) repeat 0% 0%;
+	border-top: 8px solid #efc34a;
+	border-bottom: 8px solid #efc34a;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
+	-webkit-transition: background-position 1.4s ease-in-out 0.3s;
+	-moz-transition: background-position 1.4s ease-in-out 0.3s;
+	-o-transition: background-position 1.4s ease-in-out 0.3s;
+	-ms-transition: background-position 1.4s ease-in-out 0.3s;
+	transition: background-position 1.4s ease-in-out 0.3s;
+}
+.da-slider2{
+	width: 100%;
+	min-width: 520px;
+	height: 500px;
+	position: relative;
+	margin: 30px auto;
+	overflow: hidden;
 	border-top: 8px solid #efc34a;
 	border-bottom: 8px solid #efc34a;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.2), 0px -2px 1px #fff;
@@ -23,6 +38,16 @@
 	left: 0px;
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	text-align: left;
+}
+.da-slide2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 20px;
+	bottom: 20px;
+	left: 0px;
+	font-family: 'Do Hyeon';
+	text-align: center;
 }
 .da-slide-current{
 	z-index: 1000;
@@ -62,6 +87,20 @@
 	font-family: 'Economica', Arial, sans-serif;
 	font-weight: 700;
 }
+
+.da-slide2 h2{
+	color: rgb(0, 0, 0);
+	font-size: 50px;
+	width: 50%;
+	top: 60px;
+	white-space: nowrap;
+	z-index: 10;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	font-family: 'Economica', Arial, sans-serif;
+	margin-left: 25%;
+	font-weight: 700;
+}
+
 .da-slide p{
 	width: 45%;
 	top: 185px;
@@ -83,6 +122,21 @@
 }
 .da-slide .da-link{
 	top: 270px; /*depends on p height*/
+	border-radius: 30px;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	color: #000000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border: 6px solid #f6be25;
+	padding: 2px 20px 0px;
+	font-size: 18px;
+	font-family: 'Do Hyeon';
+	line-height: 30px;
+	width: 200px;
+	text-align: center;
+	background: rgba(236, 236, 236, 0.2);
+}
+.da-slide2 .da-link2{
+	top: 350px; /*depends on p height*/
 	border-radius: 30px;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 	color: #000000;

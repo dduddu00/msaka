@@ -4,10 +4,6 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="" />
-<meta name="author" content="" />
 <title>Happydraw!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
@@ -42,8 +38,8 @@
 			<div class="da-slide">
 				<h2>I A B</h2>
 				<p>여러분의 아이앱! 새 상품을 가져보세요</p>
-				<a href="#" class="da-link">응모하러 가기</a>
-				<div class="da-img"><img src="./resources/Image/iab.jpg" width="350" height="300" alt="iab.jpg" /></div>
+				<a href="draw.jsp" class="da-link">응모하러 가기</a>
+				<div class="da-img"><img src="./resources/Image/iab.jpg" width="330" height="300" alt="iab.jpg" /></div>
 			</div>
 			<div class="da-slide">
 				<h2>MacBook Pro</h2>
@@ -251,6 +247,34 @@
 			</div>
 		</div>
 	</section>
+	<%@ page import="java.util.Date"%>
+
+
+<footer class="container">
+	<p>&copy; Happydraw</p>
+	<br>
+	<p>박성호, 이강인, 양진영, 이경서, 최수연</p>
+</footer>
+<hr>
+<div class="text-center">
+	<%
+	
+	Date day = new java.util.Date();
+	String am_pm;
+	int hour = day.getHours();
+	int minute = day.getMinutes();
+	int second = day.getSeconds();
+	if (hour / 12 == 0) {
+		am_pm = "AM";
+	} else {
+		am_pm = "PM";
+		hour = hour - 12;
+	}
+	String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+	out.println("현재 접속  시각: " + CT + "\n");
+	%>
+</div>
+
 	<!-- Bootstrap core JS-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
