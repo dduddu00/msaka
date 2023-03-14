@@ -49,7 +49,7 @@
 			</div>
 			<div class="da-slide">
 				<h2>Jordan 1 Mid Dark Teal</h2>
-				<p>에어조던 미드 타크틸 지금 응모하세요 !</p>
+				<p>에어조던 미드 다크틸 지금 응모하세요 !</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/jo.jpg" width="330" height="340" alt="image01" /></div>
 			</div>
@@ -246,6 +246,57 @@
 			</div>
 		</div>
 	</section>
+	
+				<!-- Three -->
+				<section id="three" class="wrapper style1 fade-up">
+					<div class="inner">
+						<h2> 문의 및 질문 </h2>
+						<p> 응모 방법이나 기타 문의 사항이 있다면 문의 주시길 바랍니다. </p>
+						<div class="split style1">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name"> 이름 </label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email"> 이메일 </label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message"> 내용 </label>
+											<textarea name="message" id="message" rows="5"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><a href="" class="button submit"> 보내기 </a></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<ul class="contact">
+									<li>
+										<h3>이메일</h3>
+										<a href="#"> happydraw@naver.com </a>
+									</li>
+									<li>
+										<h3>핸드폰</h3>
+										<span>010-0000-0000</span>
+									</li>
+									<li>
+										<h3>Social</h3>
+										<ul class="icons">												
+											<li><a href="https://github.com/dduddu00" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</section>
 	<%@ page import="java.util.Date"%>
 
 
