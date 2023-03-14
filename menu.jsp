@@ -2,8 +2,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
             	<div class="navbar_logo">
-            	<i class="fas fa-paw"></i>
-                <a class="navbar-brand" href="main.jsp">MAESTRO</a>
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <a class="navbar-brand" href="main.jsp">Happydraw</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,8 +40,8 @@
                     </ul>
                     <%--장바구니 기능 --%>
                     <form class="d-flex">
-                        <a href="./login.jsp" class="btn btn-outline-dark mt-auto">로그인</a>
-                        <a href="./cart.jsp" class="btn btn-outline-dark mt-auto">Cart</a>
+                        <a href="./login.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
+                        <a href="./cart.jsp" class="btn btn-outline-dark mt-auto">배송</a>
                     </form>
                 </div>
                 
