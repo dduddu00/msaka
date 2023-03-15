@@ -10,7 +10,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="main.jsp">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="intro.jsp">기업 소개</a></li>
-                        <ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="./product.jsp">상품 목록</a></li></ul>
+                        <ul class="nav-item"><li class="nav-item"><a class="nav-link" href="./product.jsp">상품 목록</a></li></ul>
                        	
                        <li class="nav-item dropdown">
                         

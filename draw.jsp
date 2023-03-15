@@ -39,7 +39,7 @@
 				<h2>응모 방법</h2>
 				<div class="da-img2"><img src="./resources/Image/info.jpg" width="980" height="300" alt="iab.jpg" /></div>
                 <br>
-                <a href="#" class="da-link2">응모하러 가기</a>
+                <a href="./main.jsp" class="da-link2">응모 목록</a>
             </div>
 		</div>
 	</div>
@@ -117,7 +117,35 @@
 	</section>
 	</fmt:bundle>
 	
-	<jsp:include page="footer.jsp" />
+	
+	<%@ page import="java.util.Date"%>
+
+
+<footer class="container">
+	<p>&copy; Happydraw</p>
+	<br>
+	<p>박성호, 이강인, 양진영, 이경서, 최수연</p>
+</footer>
+<hr>
+<div class="text-center">
+	<%
+	
+	Date day = new java.util.Date();
+	String am_pm;
+	int hour = day.getHours();
+	int minute = day.getMinutes();
+	int second = day.getSeconds();
+	if (hour / 12 == 0) {
+		am_pm = "AM";
+	} else {
+		am_pm = "PM";
+		hour = hour - 12;
+	}
+	String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+	out.println("현재 접속  시각: " + CT + "\n");
+	%>
+</div>
+
 	<!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -22,11 +22,7 @@
     <body>
     
     <jsp:include page="menu.jsp"/>
-	<header>
-    	<div class="container">
-            <img src="./resources/Image/pp.jpg" title="회사 로고"/>
-    	</div>
-    </header>
+
      <section class="py-3">
 		<div class="container px-4 px-lg-5 mt-5">
         <div style="text-align: center">
@@ -34,11 +30,10 @@
     <img src="./resources/Image/big.jsp.jpg" width="200" height="200">
     <br/>
     <a href="https://www.instagram.com/00_c.sy/"><img src="./resources/Image/insta.png" width="70px" height="70px"></a>
-    <img src="./resources/Image/call.png" onclick=alert("010-8312-0417") width="70px" height="70px">
-    <img src="./resources/Image/mail.png" onclick=alert("tndusdlsms@nate.com") width="70px" height="70px">   
+    <img src="./resources/Image/call.png" onclick=alert("010-0000-0000") width="70px" height="70px">
+    <img src="./resources/Image/mail.png" onclick=alert("happydraw@nate.com") width="70px" height="70px">   
  
-    <h4 style="color: gray"><br>HAPPYDRAW는 <br>오직 강아지만을 위한 쇼핑몰로, 견주님들과 강아지들의 행복을 책임지겠습니다.
-    <br>문의가 있으시다면 위 인스타그램, 전화, 메일주시면 답변드리겠습니다.<br> 아이콘을 누르면 정보가 나옵니다.</h4>
+    <h4 style="color: gray"><br>HAPPYDRAW는 <br>여러분들을 행복하게 해 줄 응모사이트 입니다. 관심 있는 상품에 응모하여 행운을 가져보세요 !<br> 아이콘을 누르면 정보가 나옵니다.</h4>
     
     <h5> 
     
@@ -61,6 +56,34 @@
     </div>
     </div>
     </section>
-    
+
+    <%@ page import="java.util.Date"%>
+
+    <footer class="container">
+        <p>&copy; Happydraw</p>
+        <br>
+        <p>박성호, 이강인, 양진영, 이경서, 최수연</p>
+    </footer>
+    <hr>
+    <div class="text-center">
+        <%
+        
+        Date day = new java.util.Date();
+        String am_pm;
+        int hour = day.getHours();
+        int minute = day.getMinutes();
+        int second = day.getSeconds();
+        if (hour / 12 == 0) {
+            am_pm = "AM";
+        } else {
+            am_pm = "PM";
+            hour = hour - 12;
+        }
+        String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+        out.println("현재 접속  시각: " + CT + "\n");
+        %>
+    </div>
+
     </body>
+    
 </html>

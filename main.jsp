@@ -1,5 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 
+<%
+ String id = (String)session.getAttribute("loginId");
+%>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -253,7 +257,7 @@
 			<p> 응모 방법이나 기타 문의 사항이 있다면 문의 주시길 바랍니다. </p>
 			<div class="split style1">
 				<section>
-					<form id="gform" method="POST" data-email="fromzero0_9@naver.com" action="https://script.google.com/macros/s/AKfycbxomUcBUlk-OmzUnOjFsX8kdUW71gHi_7fiP3NsC8k9wPVqVxa-_os5ObGr3dWHCD1d/exec">
+					<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxomUcBUlk-OmzUnOjFsX8kdUW71gHi_7fiP3NsC8k9wPVqVxa-_os5ObGr3dWHCD1d/exec">
 						<div class="fields">
 							<div class="field half">
 								<label for="name"> 이름 </label>
@@ -271,14 +275,10 @@
 						<button onclick="javascript:btn()" class="button submit">
 							<i class="fa fa-paper-plane"></i>&nbsp;보내기
 						</button>
-						<script>
-							function btn(){
-								alert('메일을 전송했습니다. 확인 후 회신 드리겠습니다.');
-							}
-							</script>
+
 						<div style="display:none" class="thankyou_message">
 							<!-- You can customize the thankyou message by editing the code below -->
-							<h2><em>Thanks</em> for contacting us! We will get back to you soon!
+							<h5>문의주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</h5>
 							</h2>
 						</div>
 					</form>
@@ -341,9 +341,6 @@
 	<script src="js/scripts.js"></script>
 	<script data-cfasync="false" type="text/javascript" 
 	src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-	function btn(){
-		alert('버튼이 클릭되었습니다');
-	}
 	</script> 
 </body>
 </html>
