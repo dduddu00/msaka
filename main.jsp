@@ -246,57 +246,66 @@
 			</div>
 		</div>
 	</section>
-	
-				<!-- Three -->
-				<section id="three" class="wrapper style1 fade-up">
-					<div class="inner">
-						<h2> 문의 및 질문 </h2>
-						<p> 응모 방법이나 기타 문의 사항이 있다면 문의 주시길 바랍니다. </p>
-						<div class="split style1">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name"> 이름 </label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email"> 이메일 </label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message"> 내용 </label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit"> 보내기 </a></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<ul class="contact">
-									<li>
-										<h3>이메일</h3>
-										<a href="#"> happydraw@naver.com </a>
-									</li>
-									<li>
-										<h3>핸드폰</h3>
-										<span>010-0000-0000</span>
-									</li>
-									<li>
-										<h3>Social</h3>
-										<ul class="icons">												
-											<li><a href="https://github.com/dduddu00" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										</ul>
-									</li>
-								</ul>
-							</section>
+	<!-- Three -->
+	<section id="three" class="wrapper style1 fade-up">
+		<div class="inner">
+			<h2> 문의 및 질문 </h2>
+			<p> 응모 방법이나 기타 문의 사항이 있다면 문의 주시길 바랍니다. </p>
+			<div class="split style1">
+				<section>
+					<form id="gform" method="POST" data-email="fromzero0_9@naver.com" action="https://script.google.com/macros/s/AKfycbxomUcBUlk-OmzUnOjFsX8kdUW71gHi_7fiP3NsC8k9wPVqVxa-_os5ObGr3dWHCD1d/exec">
+						<div class="fields">
+							<div class="field half">
+								<label for="name"> 이름 </label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field half">
+								<label for="email"> 이메일 </label>
+								<input type="email" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message"> 내용 </label>
+								<textarea name="message" id="message" rows="5"></textarea>
+							</div>
 						</div>
-					</div>
+						<button onclick="javascript:btn()" class="button submit">
+							<i class="fa fa-paper-plane"></i>&nbsp;보내기
+						</button>
+						<script>
+							function btn(){
+								alert('메일을 전송했습니다. 확인 후 회신 드리겠습니다.');
+							}
+							</script>
+						<div style="display:none" class="thankyou_message">
+							<!-- You can customize the thankyou message by editing the code below -->
+							<h2><em>Thanks</em> for contacting us! We will get back to you soon!
+							</h2>
+						</div>
+					</form>
 				</section>
+				<section>
+					<ul class="contact">
+						<li>
+							<h3>이메일</h3>
+							<a href="#"> happydraw@naver.com </a>
+						</li>
+						<li>
+							<h3>문의 전화</h3>
+							<span>010-0000-0000</span>
+						</li>
+						<li>
+							<h3>Social</h3>
+							<ul class="icons">												
+								<li><a href="https://github.com/dduddu00" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.youtube.com/@sunghothegamebird" class="icon brands fa-youtube"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</section>
 	<%@ page import="java.util.Date"%>
 
 
@@ -330,6 +339,12 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
+	<script data-cfasync="false" type="text/javascript" 
+	src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+	function btn(){
+		alert('버튼이 클릭되었습니다');
+	}
+	</script> 
 </body>
 </html>
 
