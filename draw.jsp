@@ -56,15 +56,20 @@
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">	
 	<div class="container">
-		<div class="text-right"> 
-			<a href="?language=ko" >Korean</a>|<a href="?language=en" >English</a>
-			<a href="logout.jsp" class="btn btn-sm btn-success pull-right">logout</a>
-		</div>
-		<form name="newProduct" action="./processAddProduct.jsp" class="form-horizontal" method="get" enctype="multipart/form-data">
+		<form name="newProduct" action="./main.jsp" class="form-horizontal" method="get" onsubmit="ok()">
+			<script>
+
+				function ok() {
+				
+				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
+				
+				}
+				
+				</script>
 			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="productId" /></label>
+				<label class="col-sm-2">이름</label>
 				<div class="col-sm-3">
-					<input type="text" id="productId"  name="productId"  class="form-control" >
+					<input type="text" name="name" class="form-control" >
 				</div>
 			</div>
 			
@@ -121,13 +126,13 @@
 	<%@ page import="java.util.Date"%>
 
 
-<footer class="container">
-	<p>&copy; Happydraw</p>
-	<br>
-	<p>박성호, 이강인, 양진영, 이경서, 최수연</p>
-</footer>
-<hr>
-<div class="text-center">
+	<footer class="container">
+		<p>&copy; Happydraw</p>
+		<br>
+		<p>대표 : 박성호, 이강인, 양진영, 이경서, 최수연</p>
+	</footer>
+		<hr>	
+	<div class="text-center">
 	<%
 	
 	Date day = new java.util.Date();

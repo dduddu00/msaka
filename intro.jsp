@@ -2,21 +2,31 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>팀 소개</title>
-        
-		<script src="https://kit.fontawesome.com/e8f495f95b.js" crossorigin="anonymous"></script>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-		<link rel="stylesheet" href="./resources/css/bootstrap.min.css"/> 
-        <link rel="stylesheet" href="./resources/css/styles.css" />    
-
-    </head>
+	<head>
+		<meta charset="utf-8" />
+		<title>Happydraw!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				<meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+				<meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+				<meta name="author" content="Codrops" />
+				<link rel="shortcut icon" href="../favicon.ico"> 
+				<link rel="stylesheet" type="text/css" href="css/demo.css" />
+				<link rel="stylesheet" type="text/css" href="css/style.css" />
+				<script type="text/javascript" src="./resources/js/modernizr.custom.28468.js"></script>
+				<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+				<noscript>
+					<link rel="stylesheet" type="text/css" href="css/nojs.css" />
+				</noscript>
+		<script src="https://kit.fontawesome.com/e8f495f95b.js"
+			crossorigin="anonymous"></script>
+		
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<!-- Bootstrap icons-->
+		<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link rel="stylesheet" href="./resources/css/styles.css" />
+		</head>
     
     
     <body>
@@ -33,7 +43,7 @@
     <img src="./resources/Image/call.png" onclick=alert("010-0000-0000") width="70px" height="70px">
     <img src="./resources/Image/mail.png" onclick=alert("happydraw@nate.com") width="70px" height="70px">   
  
-    <h4 style="color: gray"><br>HAPPYDRAW는 <br>여러분들을 행복하게 해 줄 응모사이트 입니다. 관심 있는 상품에 응모하여 행운을 가져보세요 !<br> 아이콘을 누르면 정보가 나옵니다.</h4>
+    <h4 style="color: gray"><br>HAPPYDRAW는 <br>여러분들을 행복하게 해 줄 응모사이트 입니다. 관심 있는 상품에 응모하여 행운을 가져보세요 !<br> <h6>아이콘을 누르면 정보가 나옵니다.</h6></h4>
     
     <h5> 
     
@@ -47,22 +57,24 @@
     <br/>
     <br> 주인장 친구 강아지 : 달콩이
     <br> 나이는 7살이에요, 뽀글뽀글 갈색털과 촉촉한 코가 매력이랍니다 :> 
-    
- 
- 
-    <h6 style="color: gray">@ MAESTRO COMPANY</h6>
-    
+        
     
     </div>
     </div>
     </section>
 
+    
+
+    <br>
+    <hr>
+
     <%@ page import="java.util.Date"%>
 
+
     <footer class="container">
-        <p>&copy; Happydraw</p>
+        <p>&copy; Happydraw COMPANY</p>
         <br>
-        <p>박성호, 이강인, 양진영, 이경서, 최수연</p>
+        <p>대표 : 박성호, 이강인, 양진영, 이경서, 최수연</p>
     </footer>
     <hr>
     <div class="text-center">

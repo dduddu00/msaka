@@ -18,6 +18,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
                 <link rel="stylesheet" href="./resources/css/styles.css"  />
         
+
+				<style>
+					h3{
+						font-size: 28px;
+						font-weight: bold;
+		
+					}
+				</style>
         </head>
 <body>
 	<jsp:include page="menu.jsp" />
@@ -33,12 +41,18 @@
 <section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">	
 			<div class="container">
-		<form action="./processShippingInfo.jsp" class="form-horizontal"
-			method="post">
-			<input type="hidden" name="cartId"
-				value="<%=request.getParameter("cartId")%>">
+		<form class="form-horizontal" method="post" onsubmit="ok()">
+			<script>
 
-			<h3>주문자정보</h3>
+				function ok() {
+				
+				  alert("배송지 입력이 완료되어 배송 요청이 완료되었습니다.");
+				
+				}
+				
+				</script>
+			<h3>배송 정보</h3>
+			<br>
 			<div class="form-group row">
 				<label class="col-sm-2">성명</label>
 				<div class="col-sm-3">
@@ -47,24 +61,13 @@
 			</div>
 
 			<div class="form-group row">
-				<label class="col-sm-2">이메일</label>
+				<label for="email" class="col-sm-2">이메일</label>
 				<div class="col-sm-3">
-					<input type="text" name="email">@<input type="text"name="phone4">
+					<input type="email" id="email"
+						   placeholder="example@gmail.com"
+						   required class="form-control">
 				</div>
 			</div>
-
-            <form name="join">      
-                <label class="col-sm-2">이메일</label>
-                <input type="text" name="email1" value="이메일" onfocus="this.value='';">
-                <input type="text" name="email2" value="" disabled >
-                <select name="email" onchange="email_change()">
-                    <option value="0" >선택하세요</option>
-                    <option value="9">직접입력</option>
-                    <option value="naver.com">naver.com</option>
-                    <option value="nate.com">nate.com</option> 
-                    <option value="gmail.com">gmail.com</option> 
-                   </select>
-            </form>   
             
 			<div class="form-group row">
 				<label class="col-sm-2">연락처</label>
@@ -85,41 +88,13 @@
 
 
 
-
-
-			<h3>배송 정보</h3>
-			<div class="form-group row">
-				<label class="col-sm-2">성명</label>
-				<div class="col-sm-3">
-					<input name="name" type="text" class="form-control">
-				</div>
-			</div>
-
-			<div class="form-group row">
-				<label class="col-sm-2">연락처</label>
-				<div class="col-sm-3">
-					<select name="phone2">
-						<option value="010">010</option>
-						<option value="011">011</option>
-						<option value="016">016</option>
-						<option value="017">017</option>
-						<option value="019">019</option>
-					</select> - <input type="text" maxlength="4" size="4" name="phone3">
-					- <input type="text" maxlength="4" size="4" name="phone4">
-
-				</div>
-			</div>
-
-
-
 			<div class="form-group row">
 				<label class="col-sm-2">주소</label>
 				<div class="col-sm-3">
 					<input id="member_post" type="text" placeholder="도로명주소 입력" readonly
 						onclick="findAddr()" name="zipCode"> <input id="member_addr" type="text"
-						placeholder="주소" readonly> <br> <input type="text"
-						placeholder="상세 주소" >
-
+						placeholder="주소" readonly class="form-control"> 
+					<input type="text" placeholder="상세 주소" class="form-control">
 					<script>
 						function findAddr() {
 							new daum.Postcode(
@@ -151,34 +126,12 @@
 						src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 				</div>
 			</div>
+			<br>
 
-
-
-
-
-			<div class="form-group row">
-				<label class="col-sm-2">결제 방법</label>
-				<div class="col-sm-3">
-					<p>
-						현재는 무통장 입금만 가능합니다. <select name="phone1">
-							<option value="3333064833015">카카오뱅크(최수연) :
-								3333-06-4833015</option>
-							<option value="70140201347128">국민은행(최수연) :
-								701402-01-347128</option>
-
-						</select> 무통장 입금자명
-						<input name="name" type="text" class="form-control" name="order">
-				
-					</div>
-			</div>
-			
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10 ">
-					<a href="./cart.jsp?cartId=<%=request.getParameter("cartId")%>"
-						class="btn btn-secondary" role="button"> 이전 </a> <input
-						type="submit" class="btn btn-primary" value="등록" /> <a
-						href="./checkOutCancelled.jsp" class="btn btn-secondary"
-						role="button"> 취소 </a>
+					<input type="submit" class="btn btn-primary" value="등록" /> 
+					<a href="main.jsp" class="btn btn-secondary" role="button"> 취소 </a>
 				</div>
 			</div>
 
@@ -187,7 +140,37 @@
 	</div>
 	
 	</section>
-	<jsp:include page="footer.jsp" />
+
+	<br>
+	<hr>
+	<%@ page import="java.util.Date"%>
+
+
+	<footer class="container">
+		<p>&copy; Happydraw</p>
+		<br>
+		<p>대표 : 박성호, 이강인, 양진영, 이경서, 최수연</p>
+	</footer>
+	<hr>
+	<div class="text-center">
+		<%
+		
+		Date day = new java.util.Date();
+		String am_pm;
+		int hour = day.getHours();
+		int minute = day.getMinutes();
+		int second = day.getSeconds();
+		if (hour / 12 == 0) {
+			am_pm = "AM";
+		} else {
+			am_pm = "PM";
+			hour = hour - 12;
+		}
+		String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+		out.println("현재 접속  시각: " + CT + "\n");
+		%>
+	</div>
+
 	<!-- Bootstrap core JS-->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>

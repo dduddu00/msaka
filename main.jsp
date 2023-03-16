@@ -1,9 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 
-<%
- String id = (String)session.getAttribute("loginId");
-%>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -59,7 +55,7 @@
 			</div>
 			<div class="da-slide">
 				<h2>AirPods Max</h2>
-				<p>새롭게 선보이는 AirPods Max. 감동적인 하이파이 오디오와 <br> AirPods 특유의 매혹적인 사용성의 완벽한 조합.</p>
+				<p>새롭게 선보이는 AirPods Max. <br> 감동적인 하이파이 오디오와 AirPods 특유의 매혹적인 사용성의 완벽한 조합.</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/max.jpg" width="330" height="340" alt="image01" /></div>
 			</div>
@@ -78,7 +74,6 @@
 			
 		});
 	</script>	
-</body>
 
 	<!-- Section-->
 	<section class="py-5">
@@ -95,8 +90,8 @@
 							<div class="text-center">
 								<!-- Product name-->
 								<h5 class="fw-bolder">아이앱</h5>
-								<!-- Product price-->
-								응모기간 3/1~3/13
+								<br>
+								응모기간 4/17 - 4/23
 							</div>
 						</div>
 						<!-- Product actions-->
@@ -116,8 +111,8 @@
 				<div class="col mb-5">
 					<div class="card h-100">
 						<!-- Sale badge-->
-						<div class="badge bg-primary text-white position-absolute"
-							style="top: 0.5rem; right: 0.5rem">Best</div>
+						<div class="badge bg-secondary text-white position-absolute"
+							style="top: 0.5rem; right: 0.5rem">마감 임박</div>
 						<!-- Product image-->
 						<img class="card-img-top" src="./resources/Image/mac.jpg"
 							width="450" height="300" alt="" />
@@ -136,8 +131,8 @@
 									<div class="bi-star-fill"></div>
 								</div>
 								<!-- Product price-->
-								<span class="text-muted text-decoration-line-through">응모 기간 3/1 ~ 3/13
-									-</span> 4/2 까지 연장
+								<span class="text-muted text-decoration-line-through">응모 기간 4/25 ~ 4/30
+									-</span> 5/3 까지 연장
 							</div>
 						</div>
 						<!-- Product actions-->
@@ -152,7 +147,7 @@
 					<div class="card h-100">
 						<!-- Sale badge-->
 						<div class="badge bg-primary text-white position-absolute"
-							style="top: 0.5rem; right: 0.5rem">Sale</div>
+							style="top: 0.5rem; right: 0.5rem">Hot</div>
 						<!-- Product image-->
 						<img class="card-img-top" src="./resources/Image/jo.jpg"
 							width="450" height="300" alt="강아지 스누피 쿠키" />
@@ -162,7 +157,6 @@
 								<!-- Product name-->
 								<h5 class="fw-bolder">에어조던 미드 다크 틸</h5>
 								<!-- Product price-->
-								<span class="text-muted text-decoration-line-through">상시응모</span>
 								<br>
 								응모 기간 3/1 ~ 3/14
 							</div>
@@ -185,7 +179,7 @@
 							<div class="text-center">
 								<!-- Product name-->
 								<h5 class="fw-bolder">에어팟 맥스 - 실버</h5>
-								<!-- Product reviews-->
+								<br>
 								<div
 									class="d-flex justify-content-center small text-warning mb-2">
 									<div class="bi-star-fill"></div>
@@ -230,7 +224,7 @@
 									<div class="bi-star-fill"></div>
 								</div>
 								<!-- Product price-->
-								<span class="text-muted text-decoration-line-through">응모 기간 2/1 ~ 2/13</span>
+								<span class="text-muted text-decoration-line-through">상시응모</span>
 								<br>
 								응모 마감
 							</div>
@@ -245,7 +239,7 @@
 				</div>
 				<div class="container">
 
-					<hr>
+					
 				</div>
 			</div>
 		</div>
@@ -253,8 +247,10 @@
 	<!-- Three -->
 	<section id="three" class="wrapper style1 fade-up">
 		<div class="inner">
-			<h2> 문의 및 질문 </h2>
-			<p> 응모 방법이나 기타 문의 사항이 있다면 문의 주시길 바랍니다. </p>
+			<h2> Q & A </h2>
+			<hr>
+			<p> 궁금하신 사항은 언제든지 문의해 주시기를 바랍니다. </p>
+            <p> 성심성의껏 답변해 드리겠습니다. </p>
 			<div class="split style1">
 				<section>
 					<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxomUcBUlk-OmzUnOjFsX8kdUW71gHi_7fiP3NsC8k9wPVqVxa-_os5ObGr3dWHCD1d/exec">
@@ -268,7 +264,7 @@
 								<input type="email" name="email" id="email" />
 							</div>
 							<div class="field">
-								<label for="message"> 내용 </label>
+								<label for="message"> 문의 내용 </label>
 								<textarea name="message" id="message" rows="5"></textarea>
 							</div>
 						</div>
@@ -306,33 +302,36 @@
 			</div>
 		</div>
 	</section>
-	<%@ page import="java.util.Date"%>
-
-
-<footer class="container">
-	<p>&copy; Happydraw</p>
 	<br>
-	<p>박성호, 이강인, 양진영, 이경서, 최수연</p>
-</footer>
-<hr>
-<div class="text-center">
-	<%
+	<hr>
 	
-	Date day = new java.util.Date();
-	String am_pm;
-	int hour = day.getHours();
-	int minute = day.getMinutes();
-	int second = day.getSeconds();
-	if (hour / 12 == 0) {
-		am_pm = "AM";
-	} else {
-		am_pm = "PM";
-		hour = hour - 12;
-	}
-	String CT = hour + ":" + minute + ":" + second + " " + am_pm;
-	out.println("현재 접속  시각: " + CT + "\n");
-	%>
-</div>
+		<%@ page import="java.util.Date"%>
+
+
+	<footer class="container">
+		<p>&copy; Happydraw</p>
+		<br>
+		<p>대표 : 박성호, 이강인, 양진영, 이경서, 최수연</p>
+	</footer>
+	<hr>
+	<div class="text-center">
+		<%
+		
+		Date day = new java.util.Date();
+		String am_pm;
+		int hour = day.getHours();
+		int minute = day.getMinutes();
+		int second = day.getSeconds();
+		if (hour / 12 == 0) {
+			am_pm = "AM";
+		} else {
+			am_pm = "PM";
+			hour = hour - 12;
+		}
+		String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+		out.println("현재 접속  시각: " + CT + "\n");
+		%>
+	</div>
 
 	<!-- Bootstrap core JS-->
 	<script
