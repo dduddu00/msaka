@@ -64,16 +64,16 @@
 				</script>
 		</form>
 	
-		<img src="./resources/Image/ab1.jpg" width="950" height="420">
+		<h1>제품 구성</h1>
+        <br>
+		<img src="./resources/Image/mac1.jpg" width="950" height="420">
 		<br>
-		<br>
-		<img src="./resources/Image/ab2.jpg"width="950" height="420">
 		<br>
 		<br>
 		<hr>
 		<br>
 
-	<form action="main.jsp" class="form-horizontal" method="get">
+	<form action="addwrite.jsp" class="form-horizontal" method="get">
 		<div class="form-group row">
 			<label class="col-sm-2">이름</label>
 			<div class="col-sm-3">
@@ -94,21 +94,7 @@
 				<input type="text" id="phone"  name="phone" class="form-control" >
 			</div>
 		</div>
-
-		<div class="form-group row">
-			<label class="col-sm-2">응모 상품</label>
-			<div class="col-sm-3">
-				<select name="iab"> <option value="iab">아이앱 하프</option>
-			</div>
-		</div>
-
-		<div class="form-group row">
-			<label class="col-sm-2">응모 상품</label>
-			<div class="col-sm-3">
-				<select name="iab"> <option value="010">아이앱 하프</option>
-			</div>
-		</div>
-
+		
 		<div class="form-group row2">
 			<div class="col-sm-13">
 				<input type="button" class="btn btn-dark" value="응모하기" onclick="CheckAddProduct()">

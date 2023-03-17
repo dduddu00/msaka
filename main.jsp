@@ -47,7 +47,7 @@
 				<p>Apple M2 칩(8코어 CPU, 10코어 GPU, 16코어 Neural Engine) <br>
 					지금 바로 맥북에 응모하세요 !
 				</p>
-				<a href="#" class="da-link">응모하러 가기</a>
+				<a href="macdraw.jsp" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/mac.jpg" width="330" height="300" alt="mac.jpg" /></div>
 			</div>
 			<div class="da-slide">
@@ -62,6 +62,9 @@
 					AirPods 특유의 매혹적인 사용성의 완벽한 조합.</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/max.jpg" width="330" height="340" alt="image01" /></div>
+			</div>
+			<div class="da-slide">
+				<div class="da-img"><img src="./resources/Image/logo.jpg" width="450" height="140" alt="image01" /></div>
 			</div>
 			<nav class="da-arrows">
 				<span class="da-arrows-prev"></span>
@@ -136,13 +139,15 @@
 								</div>
 								<!-- Product price-->
 								<span class="text-muted text-decoration-line-through">응모 기간 4/25 ~ 4/30
-									-</span> 5/3 까지 연장
+								</span> 
+									<br>
+									5/3까지 연장
 							</div>
 						</div>
 						<!-- Product actions-->
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center">
-								<a class="btn btn-outline-dark mt-auto" href="clo1.jsp">응모하기</a>
+								<a class="btn btn-outline-dark mt-auto" href="macdraw.jsp">응모하기</a>
 							</div>
 						</div>
 					</div>
@@ -236,7 +241,7 @@
 						<!-- Product actions-->
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center">
-								<a class="btn btn-outline-dark mt-auto" href="toy.jsp">응모하기</a>
+								<a class="btn btn-outline-dark mt-auto" href="main".jsp">응모마감</a>
 							</div>
 						</div>
 					</div>

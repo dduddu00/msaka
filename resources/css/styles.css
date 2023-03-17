@@ -699,6 +699,17 @@ progress {
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
+.row2 {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  width: 170%;
+}
+
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -1019,6 +1030,10 @@ progress {
   .col-sm-12 {
     flex: 0 0 auto;
     width: 100%;
+  }
+  .col-sm-13 {
+    flex: 0 0 auto;
+    width: 59.9999449%;
   }
 
   .offset-sm-0 {
