@@ -2989,6 +2989,8 @@ textarea.form-control-lg {
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
+    margin: 4px;
+
   }
 }
 .btn:hover {

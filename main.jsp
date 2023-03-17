@@ -35,27 +35,31 @@
 		<!-- Codrops top bar -->
 		<div id="da-slider" class="da-slider">
 			<div class="da-slide">
-				<h2>I A B</h2>
-				<p>여러분의 아이앱! 새 상품을 가져보세요</p>
-				<a href="draw.jsp" class="da-link">응모하러 가기</a>
+				<h2>IAB STUDIO</h2>
+				<p>2023년 아이앱 스튜디오의 첫 번째 드롭입니다.<br>
+					HappyDraw에서 온라인 응모로 판매가 이루어질 예정이며,<br>
+					 당첨 후 공지 및 배송이 진행될 예정입니다.</p>
+				<a href="iabdraw.jsp" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/iab.jpg" width="330" height="300" alt="iab.jpg" /></div>
 			</div>
 			<div class="da-slide">
 				<h2>MacBook Pro</h2>
-				<p>Apple M2 칩(8코어 CPU, 10코어 GPU, 16코어 Neural Engine) <hr>
+				<p>Apple M2 칩(8코어 CPU, 10코어 GPU, 16코어 Neural Engine) <br>
+					지금 바로 맥북에 응모하세요 !
 				</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/mac.jpg" width="330" height="300" alt="mac.jpg" /></div>
 			</div>
 			<div class="da-slide">
 				<h2>Jordan 1 Mid Dark Teal</h2>
-				<p>에어조던 미드 다크틸 지금 응모하세요 !</p>
+				<p>아이코닉 룩, 매일이 편안하다. 최초의 AJ1에서 영감을 얻어 탄생한 에어 조던 1 미드는 1985년 이후 눈부시게 발전해온 조던 브랜드의 여정을 OG 팬들에게 소개합니다.</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/jo.jpg" width="330" height="340" alt="image01" /></div>
 			</div>
 			<div class="da-slide">
 				<h2>AirPods Max</h2>
-				<p>새롭게 선보이는 AirPods Max. <br> 감동적인 하이파이 오디오와 AirPods 특유의 매혹적인 사용성의 완벽한 조합.</p>
+				<p>새롭게 선보이는 AirPods Max. <br> 감동적인 하이파이 오디오와 <br>
+					AirPods 특유의 매혹적인 사용성의 완벽한 조합.</p>
 				<a href="#" class="da-link">응모하러 가기</a>
 				<div class="da-img"><img src="./resources/Image/max.jpg" width="330" height="340" alt="image01" /></div>
 			</div>
@@ -84,7 +88,7 @@
 					<div class="card h-100">
 						<!-- Product image-->
 						<img class="card-img-top" src="./resources/Image/iab.jpg"
-							width="450" height="300" alt="강아지 케이프 -오렌지" />
+							width="450" height="300" alt="아이앱 스튜디오" />
 						<!-- Product details-->
 						<div class="card-body p-4">
 							<div class="text-center">
@@ -100,7 +104,7 @@
 
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<a class="btn btn-outline-dark mt-auto" href="cape.jsp">응모하기</a>
+									<a class="btn btn-outline-dark mt-auto" href="iabdraw.jsp">응모하기</a>
 								</div>
 							</div>
 

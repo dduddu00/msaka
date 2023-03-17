@@ -36,8 +36,8 @@
 		<!-- Codrops top bar -->
 		<div id="da-slider2" class="da-slider2">
 			<div class="da-slide2">
-				<h2>응모 방법</h2>
-				<div class="da-img2"><img src="./resources/Image/info.jpg" width="980" height="300" alt="iab.jpg" /></div>
+				<h2>응모하기</h2>
+				<div class="da-img2"><img src="./resources/Image/inin.jpg" width="1250" height="340" alt="iab.jpg" /></div>
                 <br>
                 <a href="./main.jsp" class="da-link2">응모 목록</a>
             </div>
@@ -58,71 +58,91 @@
 	<div class="container">
 		<form name="newProduct" action="./main.jsp" class="form-horizontal" method="get" onsubmit="ok()">
 			<script>
-
 				function ok() {
-				
 				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
-				
 				}
-				
 				</script>
-			<div class="form-group row">
-				<label class="col-sm-2">이름</label>
-				<div class="col-sm-3">
-					<input type="text" name="name" class="form-control" >
-				</div>
-			</div>
-			
-			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="pname" /></label>
-				<div class="col-sm-3">
-					<input type="text" id="name"  name="name" class="form-control" >
-				</div>
-			</div>
-			
-			
-			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="unitPrice"/></label>
-				<div class="col-sm-3">
-					<input type="text" id="unitPrice"  name="unitPrice" class="form-control" >
-				</div>
-			</div>
-			
-			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="info" /></label>
-				<div class="col-sm-5">
-					<textarea name="info" cols="50" rows="2" class="form-control"></textarea>
-				</div>
-			</div>
-			
-			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="unitsInStock" /></label>
-				<div class="col-sm-3">
-					<input type="text" id="unitsInStock" name="unitsInStock" class="form-control" >
-				</div>
-			</div>
-
-			<div class="form-group row">
-				<label class="col-sm-2"><fmt:message key="productImage" /></label>
-				<div class="col-sm-5">
-					<input type="file" name="productImage" class="form-control">
-				</div>
-			</div>
-			
-			
-			<div class="form-group row">
-				<div class="col-sm-offset-2 col-sm-10 ">
-					<input type="button" class="btn btn-dark" value="<fmt:message key="button" />" onclick="CheckAddProduct()">
-				</div>
-			</div>
-			
 		</form>
+	
+		<img src="./resources/Image/ab1.jpg" width="950" height="370">
+		<br>
+		<br>
+		<img src="./resources/Image/ab2.jpg"width="950" height="370">
+		<br>
+		<br>
+		<hr>
+		<br>
+
+	<form action="addwrite.jsp" class="form-horizontal" method="get">
+		<div class="form-group row">
+			<label class="col-sm-2">이름</label>
+			<div class="col-sm-3">
+				<input type="text" name="name" class="form-control" >
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label class="col-sm-2">이메일</label>
+			<div class="col-sm-3">
+				<input type="email" id="email"  name="email" class="form-control" >
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<label class="col-sm-2">전화번호</label>
+			<div class="col-sm-3">
+				<input type="text" id="phone"  name="phone" class="form-control" >
+			</div>
+		</div>
+		
+		
+		<div class="form-group row">
+			<div class="col-sm-offset-2 col-sm-10 ">
+				<input type="button" class="btn btn-dark" value="응모하기" onclick="CheckAddProduct()">
+			</div>
+		</div>	
+
+	</form>
+
+
+		<br>[응모 일정]
+		<br>8월 1일(월) 오후 1시 ~ 8월 3일(수) 오후 1시
+		<br>(총 48시간)
+		<br>
+		<br>
+		<br>[응모 안내 사항]
+		<br>이번 응모는 "웍스아웃" 앱을 통해서만 가능합니다.
+		<br>응모 당일 접속 인원이 많아 오류가 발생할 수 있으니
+		<br>사전 앱 설치(업데이트) 및 회원 가입을 권장합니다.
+		<br>- App Store 혹은 Google play를 통하여 웍스아웃 앱을 설치합니다.
+		<br>- 앱 설치가 완료되면 회원 가입 후 응모 기간 내에 응모가 가능합니다.
+		<br>- 응모 당일 접속 인원이 많을 경우 응모 과정에서 오류가 발생할 수 있어
+		<br>응모 후 반드시 마이페이지에서 응모 내역을 확인 부탁드립니다.
+		<br>- 응모 시 제품당 한 사이즈만 응모가 가능하며 응모 이후 취소 및
+		<br>사이즈 변경이 불가하므로 신중히 응모를 부탁드립니다.
+		<br>
+		<br>
+		<br>[당첨자 발표]
+		<br>8월 8일(월) 오전 11시
+		
+		<br>[결제 기간]
+		<br>8월 8일(월) 오전 11시 ~ 8월 11일(목) 오전 11시
+		<br>
+		<br>
+		<br>[미수령 당첨자 발표]
+		<br>8월 15일(월) 오전 11시
+		<br>
+		<br>
+		[배송 안내 사항]
+		- 아이앱 스튜디오 라플 제품의 경우 출고 순서는 결제 시간과 무관한 점 참고 부탁드립니다.
+		- 라플 특성상 물류 출고량이 많아 배송이 지연되는 점 양해 부탁드립니다. 
 	</div>
 	</div>
 	</section>
 	</fmt:bundle>
 	
-	
+	<br>
+	<hr>
 	<%@ page import="java.util.Date"%>
 
 
