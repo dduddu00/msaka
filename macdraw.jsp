@@ -56,13 +56,13 @@
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">	
 	<div class="container">
-		<form name="newProduct" action="./main.jsp" class="form-horizontal" method="get" onsubmit="ok()">
+		<form name="macbook" action="./main.jsp" class="form-horizontal" method="get" onsubmit="ok()">
 			<script>
 				function ok() {
 				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
 				}
-				</script>
-		</form>
+			</script>
+	
 	
 		<h1>제품 구성</h1>
         <br>
@@ -73,7 +73,6 @@
 		<hr>
 		<br>
 
-	<form action="addwrite.jsp" class="form-horizontal" method="get">
 		<div class="form-group row">
 			<label class="col-sm-2">이름</label>
 			<div class="col-sm-3">
@@ -94,14 +93,27 @@
 				<input type="text" id="phone"  name="phone" class="form-control" >
 			</div>
 		</div>
+
+        <div class="form-group row">
+			<label class="col-sm-2">응모 상품</label>
+			<div class="col-sm-3">
+				<select name="mac"> <option value="mac">MacBook Pro</option>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-sm-2">응모 상품</label>
+			<div class="col-sm-3">
+				<select name="iab2"> <option value="010">MacBook Pro</option>
+			</div>
+		</div>
 		
 		<div class="form-group row2">
 			<div class="col-sm-13">
-				<input type="button" class="btn btn-dark" value="응모하기" onclick="CheckAddProduct()">
+				<input type="button" class="btn btn-dark" value="응모하기" onclick="javascript:ok()">
 			</div>
 		</div>	
-
-	</form>
+    </form>
 
 
 		<br>[응모 일정]

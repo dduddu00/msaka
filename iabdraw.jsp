@@ -62,7 +62,6 @@
 				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
 				}
 				</script>
-		</form>
 	
 		<img src="./resources/Image/ab1.jpg" width="950" height="420">
 		<br>
@@ -73,7 +72,6 @@
 		<hr>
 		<br>
 
-	<form action="main.jsp" class="form-horizontal" method="get">
 		<div class="form-group row">
 			<label class="col-sm-2">이름</label>
 			<div class="col-sm-3">
@@ -105,13 +103,13 @@
 		<div class="form-group row">
 			<label class="col-sm-2">응모 상품</label>
 			<div class="col-sm-3">
-				<select name="iab"> <option value="010">아이앱 하프</option>
+				<select name="iab2"> <option value="010">아이앱 하프</option>
 			</div>
 		</div>
 
 		<div class="form-group row2">
 			<div class="col-sm-13">
-				<input type="button" class="btn btn-dark" value="응모하기" onclick="CheckAddProduct()">
+				<input type="button" class="btn btn-dark" value="응모하기" onclick="javascript:ok()">
 			</div>
 		</div>	
 
