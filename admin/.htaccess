@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "Admin Login"
-AuthUserFile ".user/local/apache/conf/password"
-Require valid-user
-~                 

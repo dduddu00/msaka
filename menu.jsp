@@ -28,7 +28,7 @@
                     </ul>
                     <%--장바구니 기능 --%>
                     <form class="d-flex">
-                        <a href="./login.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
+                        <a href="./search.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
                         <a href="./address.jsp" class="btn btn-outline-dark mt-auto">배송지 입력</a>
                     </form>
                 </div>
