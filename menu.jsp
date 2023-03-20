@@ -11,7 +11,6 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="main.jsp">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="intro.jsp">기업 소개</a></li>
                         <li class="nav-item"><a class="nav-link" href="main.jsp">상품 목록</a></li>
-                        <li class="nav-item"><a class="nav-link" href="add.jsp">상품 등록</a></li>
                        
                         <li class="nav-item dropdown">
                         
@@ -29,9 +28,7 @@
                     <%--장바구니 기능 --%>
                     <form class="d-flex">
                         <a href="./search.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
-                        <a href="./address.jsp" class="btn btn-outline-dark mt-auto">배송지 입력</a>
                     </form>
                 </div>
-                
             </div>
         </nav>

@@ -2,7 +2,8 @@
 
 <!DOCTYPE html>
 <html>
-	<head>
+    <head>
+		<head>
 		<meta charset="utf-8" />
 		<title>Happydraw!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -11,7 +12,7 @@
 				<meta name="author" content="Codrops" />
 				<link rel="shortcut icon" href="../favicon.ico"> 
 				<link rel="stylesheet" type="text/css" href="css/demo.css" />
-				<link rel="stylesheet" type="text/css" href="css/bo.css" />
+				<link rel="stylesheet" type="text/css" href="./resources/css/bo.css" />
 				<script type="text/javascript" src="./resources/js/modernizr.custom.28468.js"></script>
 				<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
 				<noscript>
@@ -48,7 +49,7 @@
 			
 		});
 	</script>	
-    
+
     <!-- <form method="post" action="addwrite.jsp">
         Name : <input type="text" name="title"><p>
         Content : <textarea name="content" cols="50" rows="5"></textarea><p>
@@ -57,7 +58,7 @@
         <input type="reset" value="Rewrite"><br>
    </form>	
     -->
-   
+
    <form action="addwrite.jsp" class="form-horizontal" method="get">
     <div class="board_wrap">
         <div class="board_write_wrap">
@@ -125,7 +126,3 @@
         </script> 
 </body>
 </html>
-
-
-
-

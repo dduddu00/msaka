@@ -59,9 +59,10 @@
 	
 				
 		<h1>제품 상세</h1>
-		<img src="./resources/Image/mac1.jpg" width="950" height="420">
+		<img src="./resources/Image/max1.jpg" width="950" height="520">
 		<br>
 		<br>
+		<img src="./resources/Image/max2.jpg"width="950" height="420">
 		<br>
 		<br>
 		<hr>
@@ -96,7 +97,7 @@
 		<div class="form-group row">
 			<label class="col-sm-2">응모 상품</label>
 			<div class="col-sm-3">
-				<select name="macbook"> <option value="맥북 프로">맥북 프로</option>
+				<select name="airpod"> <option value="에어팟 맥스">에어팟 맥스</option>
                 </div>
 		</div>
 				<div class="form-group row">
@@ -105,8 +106,7 @@
 					   <select name="iab2"> <option value="010"></option>
 					</div>
 				 </div>
-
-				 <div class="form-group row">
+                 <div class="form-group row">
 					<label class="col-sm-2">주소</label>
 					<div class="col-sm-3">
 						<input id="member_post" type="text" placeholder="도로명주소 입력" readonly
@@ -159,7 +159,7 @@
 
 
 		<br><h5>[응모 일정]
-		<br>4월 25일(화) 오후 1시 ~ 4월 30일(일) 오후 1시</h5>
+		<br>4월 26일(수) 오후 1시 ~ 5월 2일(화) 오후 1시</h5>
 		<br>
 		<br>
 		<br>[응모 안내 사항]
@@ -171,16 +171,15 @@
 		<br>
 		<br>
 		<br><h5>[당첨자 발표]
-			<br>
-			5월 5일(금금) 오전 11시
-			<br>
-			<br>
-			<br>[배송지 입력 기간]
-			<br>5월 5일(금) 오전 11시 ~ 5월 7일(일) 오전 11시
-			<br>
-			<br>
-			<br>[미수령 당첨자 발표]
-			<br>5월 9일(화) 오전 11시 </h5>
+        <br>5월 3일(수) 오전 11시
+        <br>
+        <br>
+        <br>[배송지 입력 기간]
+        <br>5월 3일(수) 오전 11시 ~ 5월 5일(금) 오전 11시
+        <br>
+        <br>
+        <br>[미수령 당첨자 발표]
+        <br>5월 8일(월) 오전 11시 </h5>
 		<br>
 		<br>[배송 안내 사항]
 		<br>- HAPPYDRAW 라플 제품의 경우 출고 순서는 결제 시간과 무관한 점 참고 부탁드립니다.

@@ -98,7 +98,7 @@
 								<!-- Product name-->
 								<h5 class="fw-bolder">아이앱</h5>
 								<br>
-								응모기간 4/17 - 4/23
+								응모기간 4/17 - 5/2
 							</div>
 						</div>
 						<!-- Product actions-->
@@ -167,13 +167,13 @@
 								<h5 class="fw-bolder">에어조던 미드 다크 틸</h5>
 								<!-- Product price-->
 								<br>
-								응모 기간 3/1 ~ 3/14
+								응모 기간 4/24 ~ 5/1
 							</div>
 						</div>
 						<!-- Product actions-->
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center">
-								<a class="btn btn-outline-dark mt-auto" href="jodraw.jspㄴ">응모하기</a>
+								<a class="btn btn-outline-dark mt-auto" href="jodraw.jsp">응모하기</a>
 							</div>
 						</div>
 					</div>
@@ -198,13 +198,13 @@
 									<div class="bi-star-fill"></div>
 								</div>
 								<!-- Product price-->
-								응모 기간 3/1 ~ 3/13
+								응모 기간 4/26 ~ 5/2
 							</div>
 						</div>
 						<!-- Product actions-->
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center">
-								<a class="btn btn-outline-dark mt-auto" href="dal.jsp">응모하기</a>
+								<a class="btn btn-outline-dark mt-auto" href="maxdraw.jsp">응모하기</a>
 							</div>
 						</div>
 					</div>

@@ -43,7 +43,7 @@
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">	
 			<div class="container">
-		<form action="./processShippingInfo.jsp" class="form-horizontal"
+		<form action="./find.jsp" class="form-horizontal"
 			method="post">
 			<input type="hidden" name="cartId"
 				value="<%=request.getParameter("cartId")%>">
@@ -58,17 +58,22 @@
 			</div>
             
 			<div class="form-group row">
-				<label class="col-sm-2">연락처</label>
+				<label class="col-sm-2">전화번호</label>
 				<div class="col-sm-3">
-					<select name="phone2">
-						<option value="010">010</option>
-						<option value="011">011</option>
-						<option value="016">016</option>
-						<option value="017">017</option>
-						<option value="019">019</option>
-					</select> - <input type="text" maxlength="4" size="4" name="phone3">
-					- <input type="text" maxlength="4" size="4" name="phone4">
+					<input type="text" id="phone"  name="phone" class="form-control" >
 				</div>
+			</div>
+
+			<div class="form-group row">
+				<label class="col-sm-2">응모 상품</label>
+				<div class="col-sm-3">
+					<select name="product">
+						<option value="iab">아이앱 하프</option>
+						<option value="jordan">조던 미드 다크틸</option>
+						<option value="macbook">맥북 프로</option>
+						<option value="airpod">에어팟 맥스</option>
+					</select>
+					</div>
 			</div>
 
 			<br>

@@ -67,7 +67,12 @@
 		<br>
 		<hr>
 		<br>
-        <form action="./processAddressInput.jsp" method="get">
+        <form action="./processAddressInput.jsp" method="get" onsubmit="ok()">
+			<script>
+				function ok() {
+				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
+				}
+				</script>
 		<div class="form-group row">
 			<label class="col-sm-2">이름</label>
 			<div class="col-sm-3">
@@ -94,19 +99,71 @@
 			<div class="col-sm-3">
 				<select name="iab"> <option value="아이앱 하프">아이앱 하프</option>
                 </div>
+		</div>
+				<div class="form-group row">
+					<label class="col-sm-2">응모 상품</label>
+					<div class="col-sm-3">
+					   <select name="iab2"> <option value="010"></option>
+					</div>
+				 </div>
+
+
+				 <div class="form-group row">
+					<label class="col-sm-2">주소</label>
+					<div class="col-sm-3">
+						<input id="member_post" type="text" placeholder="도로명주소 입력" readonly
+							onclick="findAddr()"> 
+						<input id="member_addr" type="text" name="address1"
+							placeholder="주소" readonly class="form-control"> 
+						<input type="text" name="address2" placeholder="상세 주소" class="form-control">
+						<script>
+							function findAddr() {
+								new daum.Postcode(
+										{
+											oncomplete : function(data) {
+	
+												console.log(data);
+	
+												// 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+												// 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
+												// 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+												var roadAddr = data.roadAddress; // 도로명 주소 변수
+												var jibunAddr = data.jibunAddress; // 지번 주소 변수
+												// 우편번호와 주소 정보를 해당 필드에 넣는다.
+												document
+														.getElementById('member_post').value = data.zonecode;
+												if (roadAddr !== '') {
+													document
+															.getElementById("member_addr").value = roadAddr;
+												} else if (jibunAddr !== '') {
+													document
+															.getElementById("member_addr").value = jibunAddr;
+												}
+											}
+										}).open();
+							}
+						</script>
+						<script
+							src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+					</div>
+				</div>
+				<br>
 
 
 		<div class="form-group row2">
 			<div class="col-sm-13">
-				<input type="submit" value="응모하기">
+				<input type="submit" value="응모하기" >
 			</div>
-		</div>	
+		</div>
 
+		
+
+		
 	</form>
 
 
-		<br>[응모 일정]
-		<br>4월 17일(월) 오후 1시 ~ 4월 23일(일) 오후 1시
+		<br><h5>[응모 일정]
+		<br>4월 17일(월) 오후 1시 ~ 5월 2일(일) 오후 1시</h5>
 		<br>
 		<br>
 		<br>[응모 안내 사항]
@@ -114,22 +171,38 @@
 		<br>응모 당일 접속 인원이 많아 오류가 발생할 수 있으니 사전 상품 옵션 확인을 권장합니다.
 		<br>- 회원가입 필요없이 응모 기간 내에 응모가 가능합니다.
 		<br>- 응모 당일 접속 인원이 많을 경우 응모 과정에서 오류가 발생할 수 있어 응모 후 반드시 응모 내역을 확인 부탁드립니다.
-		<br>- 응모 시 지정된 사이즈, 옵션으로만 응모가 가능하며 응모 이후 취소 및 사이즈 변경이 불가하므로 신중히 응모를 부탁드립니다.
+		<br>- 응모 시 지정된 옵션으로만 응모가 가능하며 응모 이후 취소 및 옵션 변경이 불가하므로 신중히 응모를 부탁드립니다.
 		<br>
 		<br>
-		<br>[당첨자 발표]
-		<br>4월 24일(월) 오전 11시
-		
+		<br><h5>[당첨자 발표]
+		<br>
+		5월 3일(수) 오전 11시
+		<br>
+		<br>
 		<br>[배송지 입력 기간]
-		<br>4월 24일(월) 오전 11시 ~ 4월 26일(수) 오전 11시
+		<br>5월 3일(수) 오전 11시 ~ 5월 5일(금) 오전 11시
 		<br>
 		<br>
 		<br>[미수령 당첨자 발표]
-		<br>4월 27일(목) 오전 11시
+		<br>5월 8일(월) 오전 11시 </h5>
+		<br>
 		<br>
 		<br>[배송 안내 사항]
 		<br>- HAPPYDRAW 라플 제품의 경우 출고 순서는 결제 시간과 무관한 점 참고 부탁드립니다.
 		<br>- 라플 특성상 물류 출고량이 많아 배송이 지연되는 점 양해 부탁드립니다. 
+		<br>
+		<br>
+		<br>[세탁 및 취급 시 주의사항]
+
+		<br>- 원단 특성상 마찰에 의한 올 뜯김 또는 보풀이 일어날 수 있으므로 취급 시 주의하십시오.
+		<br>- 의류에 프린트나 장식물이 있는 경우 뒤집어 세탁하시고, 비벼서 세탁하지 마십시오.
+		<br>- 이염 우려가 있으니 물이나 땀에 젖은 경우 젖은 상태로 보관하지 마시고, 신속히 단독 세탁하여 주십시오.
+		<br>- 온수에 세탁하지 마시고, 반드시 찬물에 세탁하여 주십시오.
+		<br>- 세탁 후에는 옷걸이를 이용하여 겹쳐지지 않게 건조해 주십시오.
+		<br>- 기계 건조(열건조)는 의류가 손상이 되므로 삼가 주십시오.
+		<br>- 미세한 크기의 잡사가 있을 수 있습니다. 이 부분은 불량이 아닌 점 안내드립니다.
+		<br>- 피그먼트 워싱 제품일 경우 물 빠짐 및 이염 현상이 발생할 수 있어 반드시 단독 세탁하여 주십시오.
+		<br>- 부분 세탁을 할 경우 부분 탈색 현상이 발생될 수 있으니 단독 세탁하여 주십시오.
 	</div>
 	</div>
 	</section>

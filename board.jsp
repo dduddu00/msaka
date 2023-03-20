@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<head>
 		<meta charset="utf-8" />
 		<title>Happydraw!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -12,7 +13,7 @@
 				<meta name="author" content="Codrops" />
 				<link rel="shortcut icon" href="../favicon.ico"> 
 				<link rel="stylesheet" type="text/css" href="css/demo.css" />
-				<link rel="stylesheet" type="text/css" href="css/bo.css" />
+				<link rel="stylesheet" type="text/css" href="./resources/css/bo.css" />
 				<script type="text/javascript" src="./resources/js/modernizr.custom.28468.js"></script>
 				<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
 				<noscript>
@@ -63,17 +64,39 @@
 			</div>
 			<div>
 				<div class="num">1</div>
-				<div class="title"><a href="view.jsp">맥북 당첨자 발표합니다.</a></div>
-				<div class="writer">운영자</div>
-				<div class="date">2023.3.16</div>
-				<div class="count">122</div>
+				<div class="title"><a href="viewmac.jsp">MacBook Pro 당첨자 발표합니다.</a></div>
+				<div class="writer">최수연</div>
+				<div class="date">2023.5.3</div>
+				<div class="count">417</div>
 			</div>
+			<div>
+				<div class="num">2</div>
+				<div class="title"><a href="viewiab.jsp">IAB Studio 당첨자를 발표하겠다</a></div>
+				<div class="writer">박성호</div>
+				<div class="date">2023.5.3</div>
+				<div class="count">121</div>
+			</div>
+			<div>
+				<div class="num">3</div>
+				<div class="title"><a href="viewjo.jsp">Jordan 당첨자 발표합니다.</a></div>
+				<div class="writer">이경서</div>
+				<div class="date">2023.5.3</div>
+				<div class="count">525</div>
+			</div>
+			<div>
+				<div class="num">3</div>
+				<div class="title"><a href="viewqu.jsp">쿼카 장난감 당첨자 발표합니다.</a></div>
+				<div class="writer">이강인</div>
+				<div class="date">2023.4.27</div>
+				<div class="count">1110</div>
+			</div>
+
 
 
 		</div>
 		<div class="board_page">
-			<a href="#" class="bt first"><<</a>
-			<a href="#" class="bt prev"><</a>
+			<a href="#" class="bt first"><</a>
+			<a href="#" class="bt prev"></a>
 			<a href="#" class="num on">1</a>
 			<a href="#" class="num">2</a>
 			<a href="#" class="num">3</a>
