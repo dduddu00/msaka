@@ -11,7 +11,7 @@ pipeline {
    stage('docker build') {
       steps {
         sh '''
-        sudo docker pull 192.168.20.100:5000/test:2.0
+        docker pull 192.168.20.100:5000/test:2.0
         '''
       }
     }  
