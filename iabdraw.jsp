@@ -56,13 +56,9 @@
 	<section class="py-5">
 		<div class="container px-4 px-lg-5 mt-5">	
 	<div class="container">
-		<form name="newProduct" action="./main.jsp" class="form-horizontal" method="get" onsubmit="ok()">
-			<script>
-				function ok() {
-				  alert("응모 완료되었습니다. 응모해주셔서 감사합니다.");
-				}
-				</script>
 	
+				
+		<h1>제품 상세</h1>
 		<img src="./resources/Image/ab1.jpg" width="950" height="420">
 		<br>
 		<br>
@@ -71,7 +67,7 @@
 		<br>
 		<hr>
 		<br>
-
+        <form action="./processAddressInput.jsp" method="get">
 		<div class="form-group row">
 			<label class="col-sm-2">이름</label>
 			<div class="col-sm-3">
@@ -96,20 +92,13 @@
 		<div class="form-group row">
 			<label class="col-sm-2">응모 상품</label>
 			<div class="col-sm-3">
-				<select name="iab"> <option value="iab">아이앱 하프</option>
-			</div>
-		</div>
+				<select name="iab"> <option value="아이앱 하프">아이앱 하프</option>
+                </div>
 
-		<div class="form-group row">
-			<label class="col-sm-2">응모 상품</label>
-			<div class="col-sm-3">
-				<select name="iab2"> <option value="010">아이앱 하프</option>
-			</div>
-		</div>
 
 		<div class="form-group row2">
 			<div class="col-sm-13">
-				<input type="button" class="btn btn-dark" value="응모하기" onclick="javascript:ok()">
+				<input type="submit" value="응모하기">
 			</div>
 		</div>	
 
