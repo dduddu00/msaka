@@ -31,43 +31,113 @@
     
     <body>
     
-    <jsp:include page="menu.jsp"/>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+            	<div class="navbar_logo">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <a class="navbar-brand" href="main.jsp">Happydraw</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="main.jsp">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="intro.jsp">기업 소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="main.jsp">상품 목록</a></li>
+                       
+                        <li class="nav-item dropdown">
+                        
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">커뮤니티</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            	
+                                <li><a class="dropdown-item" href="board.jsp">공지사항</a></li>
+                                <li><a class="dropdown-item" href="./qus.jsp">문의하기</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <%--장바구니 기능 --%>
+                    <form class="d-flex">
+                        <a href="./search.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
      <section class="py-3">
-		<div class="container px-4 px-lg-5 mt-5">
+		<div class="container px-9 px-lg-5 mt-5">
+            
         <div style="text-align: center">
-    <h1>HAPPYDRAW를 소개합니다.</h1>
-    <img src="./resources/Image/big.jsp.jpg" width="200" height="200">
-    <br/>
-    <a href="https://www.instagram.com/00_c.sy/"><img src="./resources/Image/insta.png" width="70px" height="70px"></a>
-    <img src="./resources/Image/call.png" onclick=alert("010-0000-0000") width="70px" height="70px">
-    <img src="./resources/Image/mail.png" onclick=alert("happydraw@nate.com") width="70px" height="70px">   
+         <h1>HAPPYDRAW를 소개합니다.</h1>
+            <style>
+                h4{line-height:37px
+                }
+            </style>
+            <h4 style="color: gray">
+                <br>HAPPYDRAW는 여러분들을 행복하게 해 줄 응모사이트입니다. 
+                <br>관심 있는 상품에 응모하여 행운을 가져보세요 !
+                <br> <h6>아이콘을 누르면 정보가 나옵니다.</h6>
+            </h4>
+            <br>
+            <a href="https://www.instagram.com/00_c.sy/"><img src="./resources/Image/insta.png" width="70px" height="70px"></a>
+            <img src="./resources/Image/call.png" onclick=alert("010-0000-0000") width="70px" height="70px">
+            <img src="./resources/Image/mail.png" onclick=alert("happydraw@nate.com") width="70px" height="70px">   
  
-    <h4 style="color: gray"><br>HAPPYDRAW는 <br>여러분들을 행복하게 해 줄 응모사이트 입니다. 관심 있는 상품에 응모하여 행운을 가져보세요 !<br> <h6>아이콘을 누르면 정보가 나옵니다.</h6></h4>
+           <br><br><br><br>
     
-    <h5> 
-    
-    <img src="./resources/Image/cora.jpg" width="200" height="200">
-    <br/>
-    <br>주인장 강아지 : 코라 
-    <br>나이는 13살로 보기보다 어려보여요.
-    <br>항상 꼬질해보이는 털과 혓바닥이 매력이랍니다 :)
-    <br/>
-    <img src="./resources/Image/kong.jpg" width="200" height="200">
-    <br/>
-    <br> 주인장 친구 강아지 : 달콩이
-    <br> 나이는 7살이에요, 뽀글뽀글 갈색털과 촉촉한 코가 매력이랍니다 :> 
-        
+
+        <div style="width:600px; height:370px;  float:left; ">
+            <img src="./resources/Image/sh.jpg" width="240" height="240">
+            <br>
+            <br>
+            <h3>박성호</h3>
+            안녕하다 나는 Sung Ho Park 다
+            <br> 활기찬 아침 HappyDraw 다
+        </div>
+        <div style="width:600px; height:370px; float:left;">
+            <img src="./resources/Image/gang.jpg" width="220" height="250" >
+            <br>
+            <br>
+            <h3>이강인</h3>
+            축구 3번해본 슛돌이 이강인입니다.
+        </div>
+            <br>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div style="width:400px; height:370px;  float:left; ">
+                <img src="./resources/Image/jin.jpg" width="200" height="230">
+                <br>
+                <br>
+                <h3>양진영</h3>
+                작은 소리에도 혼자 깜!!짝!!!! 놀라니  
+                <br>항상 조심히 다뤄주세요!!!
+        </div>
+        <div style="width:400px; height:370px; float:left;">
+                <img src="./resources/Image/seo.jpg" width="250" height="230" >
+                <br>
+                <br>
+                <h3>이경서</h3>
+                웃을 때 주우재 닮은 우파루파입니다.
+                <br> 목에 있는 아가미로 공격해요.
+        </div>
+        <div style="width:400px; height:370px; float:left;">
+                <img src="./resources/Image/soo.jpg" width="200" height="230" >
+                <br>
+                <br>
+                <h3>최수연</h3>
+                마조리카 닮았다는 최수연입니다.
+                <br> 저는 아닌 것 같아요.
+        </div>
+
+            
     
     </div>
     </div>
-    </section>
-
-    
-
-    <br>
-    <hr>
-
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
     <%@ page import="java.util.Date"%>
 
 
@@ -95,6 +165,12 @@
         out.println("현재 접속  시각: " + CT + "\n");
         %>
     </div>
+
+
+    
+
+
+    
 
     </body>
     

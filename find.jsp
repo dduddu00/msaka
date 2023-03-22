@@ -69,18 +69,18 @@
                  Class.forName("com.mysql.jdbc.Driver");
                  conn=DriverManager.getConnection(jdbcUrl, dbId, dbPass);
         
-                 String sql= "select ifnull(max(phone),0) * from "+ product + " WHERE phone='" + phone +"'";
+                 String sql= "select * from "+ product + " WHERE phone='" + phone +"'";
                  pstmt=conn.prepareStatement(sql);
                  rs = pstmt.executeQuery();
-        
-                 while(rs.next()){
+                 if(rs.next()){
+                  
                     
          %>
 
          
          <tr>
          <h3>상품</h3>
-         <td><%=rs.getString("iab") %></td>
+         <td><%=rs.getString("product") %></td>
          <br>
          <br>
          <br>
@@ -104,6 +104,10 @@
          </tr>
          <br>
          
+<%
+      }else{
+%>
+              <h1 class="alert alert-danger">응모 내역이 존재하지 않습니다.</h1>
 <%
       }
       }catch(Exception e){
