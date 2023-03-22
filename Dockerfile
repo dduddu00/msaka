@@ -1,4 +1,3 @@
-vi Dockerfile
 ###
 FROM centos:7
   
