@@ -129,15 +129,14 @@
 		<div class="form-group row">
 			<label class="col-sm-2">응모 상품</label>
 			<div class="col-sm-3">
-				<select name="product"> <option value="에어조던 미드 다크 틸">에어조던 미드 다크 틸</option>
-                </div>
+				<select name="table">
+					<option value="iab">아이앱 하프</option>
+					<option value="jordan">조던 미드 다크틸</option>
+					<option value="macbook">맥북 프로</option>
+					<option value="airpod">에어팟 맥스</option>
+				</select>
+				</div>
 		</div>
-				<div class="form-group row">
-					<label class="col-sm-2">응모 상품</label>
-					<div class="col-sm-3">
-					   <select name="iab2"> <option value="010"></option>
-					</div>
-				 </div>
 
 				 <div class="form-group row">
 					<label class="col-sm-2">주소</label>
