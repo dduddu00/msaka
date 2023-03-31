@@ -48,7 +48,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							
 							<li><a class="dropdown-item" href="board.jsp">공지사항</a></li>
-							<li><a class="dropdown-item" href="./qus.jsp">문의하기</a></li>
+							<li><a class="dropdown-item" href="qus.jsp">문의하기</a></li>
 							
 							
 						</ul>

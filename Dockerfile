@@ -1,6 +1,6 @@
 ###
 FROM centos:7
-  
+
 RUN yum -y install java-1.8.0-openjdk wget
 RUN wget http://dlcdn.apache.org/tomcat/tomcat-8/v8.5.87/bin/apache-tomcat-8.5.87.tar.gz
 RUN tar -zxvf apache-tomcat-8.5.87.tar.gz

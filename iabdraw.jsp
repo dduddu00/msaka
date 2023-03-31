@@ -28,8 +28,6 @@
 <link rel="stylesheet" href="./resources/css/styles.css" />
 </head>
 <body>
-	<fmt:setLocale value='<%= request.getParameter("language") %>'/>
-	<fmt:bundle basename="bundle.message" >
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
             	<div class="navbar_logo">
@@ -237,7 +235,6 @@
 	</div>
 	</div>
 	</section>
-	</fmt:bundle>
 	
 	<br>
 	<hr>

@@ -1,7 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=utf-8"%>
 <%@ page import="java.sql.*"%>
-
 <% request.setCharacterEncoding("utf-8");%>
 
 <%
@@ -9,11 +7,10 @@
    String product = request.getParameter("table");
    String name = request.getParameter("name");
    String email = request.getParameter("email");
+   String phone = request.getParameter("phone");
    String address1 = request.getParameter("address1");
    String address2 = request.getParameter("address2");
    String address = address1+address2;
-   String phone = request.getParameter("phone");
-
 
 
 
@@ -21,9 +18,11 @@
    PreparedStatement pstmt=null;
    String str="";
    try{   
-     String jdbcUrl="jdbc:mysql://192.168.23.100/happydraw";
-     String dbId="root";
-     String dbPass="1234";
+        String jdbcUrl="jdbc:mysql://database-1.cipuxsjd2tmb.ap-northeast-2.rds.amazonaws.com/happydraw?useUnicode=true&characterEncoding=UTF-8";
+        String dbId="team";
+        String dbPass="Happydraw!";
+   
+
 
          Class.forName("com.mysql.jdbc.Driver");
          conn=DriverManager.getConnection(jdbcUrl, dbId, dbPass);
@@ -33,17 +32,18 @@
          pstmt.setString(1,product);
          pstmt.setString(2,name);
          pstmt.setString(3,email);
-         pstmt.setString(4,address);
-         pstmt.setString(5,phone);
+         pstmt.setString(4,phone);
+         pstmt.setString(5,address);
          pstmt.executeUpdate();
 
 
-         pageContext.forward("main.jsp");
+         pageContext.forward("/main.jsp");
+
 
          
         }catch(Exception e){
                 e.printStackTrace();
-                pageContext.forward("main.jsp");
+                pageContext.forward("/main.jsp");
         %>
                 <h1 class="alert alert-danger">응모에 실패했습니다.</h1>
 <%

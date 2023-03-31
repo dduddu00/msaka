@@ -30,7 +30,7 @@
     
     
     <body>
-    
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
             	<div class="navbar_logo">
@@ -57,7 +57,6 @@
                         </li>
                         
                     </ul>
-                    <%--장바구니 기능 --%>
                     <form class="d-flex">
                         <a href="./search.jsp" class="btn btn-outline-dark mt-auto">응모 내역</a>
                     </form>

@@ -28,8 +28,6 @@
 <link rel="stylesheet" href="./resources/css/styles.css" />
 </head>
 <body>
-	<fmt:setLocale value='<%= request.getParameter("language") %>'/>
-	<fmt:bundle basename="bundle.message" >
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
             	<div class="navbar_logo">
@@ -160,13 +158,13 @@
 												var jibunAddr = data.jibunAddress; // 지번 주소 변수
 												// 우편번호와 주소 정보를 해당 필드에 넣는다.
 												document
-														.getElementById('member_post').value = data.zonecode;
+												     .getElementById('member_post').value = data.zonecode;
 												if (roadAddr !== '') {
-													document
-															.getElementById("member_addr").value = roadAddr;
+												     document
+												     .getElementById("member_addr").value = roadAddr;
 												} else if (jibunAddr !== '') {
-													document
-															.getElementById("member_addr").value = jibunAddr;
+												     document
+												     .getElementById("member_addr").value = jibunAddr;
 												}
 											}
 										}).open();
@@ -219,7 +217,6 @@
 	</div>
 	</div>
 	</section>
-	</fmt:bundle>
 	
 	<br>
 	<hr>
