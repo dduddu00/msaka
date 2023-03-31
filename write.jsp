@@ -10,7 +10,7 @@
 				<meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
 				<meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
 				<meta name="author" content="Codrops" />
-				<link rel="shortcut icon" href="../favicon.ico"> 
+				<link rel="shortcut icon" href="resources/Image/face.ico"> 
 				<link rel="stylesheet" type="text/css" href="css/demo.css" />
 				<link rel="stylesheet" type="text/css" href="./resources/css/bo.css" />
 				<script type="text/javascript" src="./resources/js/modernizr.custom.28468.js"></script>
@@ -21,8 +21,6 @@
 		<script src="https://kit.fontawesome.com/e8f495f95b.js"
 			crossorigin="anonymous"></script>
 		
-		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 		<!-- Bootstrap icons-->
 		<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 		<!-- Core theme CSS (includes Bootstrap)-->

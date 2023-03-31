@@ -10,9 +10,9 @@
         
         <script src="https://kit.fontawesome.com/e8f495f95b.js"
             crossorigin="anonymous"></script>
-        
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="css/favicon.ico" />
+
+		<link rel="shortcut icon" href="resources/Image/face.ico"> 
+
         <!-- Bootstrap icons-->
         <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
         <!-- Core theme CSS (includes Bootstrap)-->
