@@ -8,7 +8,7 @@ RUN rm -rf apache-tomcat-8.5.87.tar.gz
 WORKDIR /apache-tomcat-8.5.87/webapps/ROOT
 COPY main.jsp intro.jsp qus.jsp .
 COPY css css
-COPY resources resources
+COPY resources/ /apache-tomcat-8.5.87/webapps/ROOT/resources/
 COPY WEB-INF WEB-INF
 WORKDIR /apache-tomcat-8.5.87/lib
 RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.23/mysql-connector-java-8.0.23.jar
