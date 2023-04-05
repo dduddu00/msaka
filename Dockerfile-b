@@ -6,7 +6,16 @@ RUN wget http://dlcdn.apache.org/tomcat/tomcat-8/v8.5.87/bin/apache-tomcat-8.5.8
 RUN tar -zxvf apache-tomcat-8.5.87.tar.gz
 RUN rm -rf apache-tomcat-8.5.87.tar.gz
 WORKDIR /apache-tomcat-8.5.87/webapps/ROOT
-COPY ./msaka .
+COPY ./css .
+COPY ./WEB-INF .
+COPY ./resources .
+COPY ./write.jsp .
+COPY ./board.jsp .
+COPY ./viewiab.jsp .
+COPY ./viewjo.jsp .
+COPY ./viewmac.jsp .
+COPY ./viewqu.jsp .
+
 WORKDIR /apache-tomcat-8.5.87/lib
 RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.23/mysql-connector-java-8.0.23.jar
 WORKDIR /apache-tomcat-8.5.87/bin
