@@ -18,7 +18,7 @@
    PreparedStatement pstmt=null;
    String str="";
    try{   
-        String jdbcUrl="jdbc:mysql://database-1.cipuxsjd2tmb.ap-northeast-2.rds.amazonaws.com/happydraw?useUnicode=true&characterEncoding=UTF-8";
+        String jdbcUrl="jdbc:mysql://happydraw.cipuxsjd2tmb.ap-northeast-2.rds.amazonaws.com/happydraw?useUnicode=true&characterEncoding=UTF-8";
         String dbId="team";
         String dbPass="Happydraw!";
    

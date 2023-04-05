@@ -94,7 +94,7 @@
            String str="";
            ResultSet rs = null;
            try{
-            String jdbcUrl="jdbc:mysql://database-1.cipuxsjd2tmb.ap-northeast-2.rds.amazonaws.com/happydraw";
+            String jdbcUrl="jdbc:mysql://happydraw.cipuxsjd2tmb.ap-northeast-2.rds.amazonaws.com/happydraw";
             String dbId="team";
             String dbPass="Happydraw!";
 
