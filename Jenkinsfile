@@ -17,7 +17,7 @@ pipeline {
         sh '''
         docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main:${BUILD_NUMBER}
+        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         '''
       }
     }
@@ -26,7 +26,7 @@ pipeline {
         sh '''
         docker tag product 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-product
         aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-product
-        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-product:${BUILD_NUMBER}
+        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-product
         '''
       }
     }
@@ -35,8 +35,7 @@ pipeline {
         sh '''
         docker tag board 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-board
         aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-board
-        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-board:${BUILD_NUMBER}
-        '''
+        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-board
       }
     }
    stage('k8s apply') {
@@ -48,3 +47,4 @@ pipeline {
     }
    }
   }
+
