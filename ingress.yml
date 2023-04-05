@@ -10,8 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/subnets: subnet-0775c8217a4c767a8,subnet-05698c46c21aa028e
 spec:
   rules:
-  - host: www.happydraw.net
-    http:
+    - http:
         paths:
           - pathType: Prefix
             path: /
@@ -133,4 +132,3 @@ spec:
                 name: product-svc
                 port:
                   number: 80
-
