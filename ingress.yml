@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: instance
-    alb.ingress.kubernetes.io/subnets: subnet-04699facb56e84c15,subnet-0cd8dc579dd902d54
+    alb.ingress.kubernetes.io/subnets: subnet-0775c8217a4c767a8,subnet-05698c46c21aa028e
 spec:
   rules:
   - host: www.happydraw.net
