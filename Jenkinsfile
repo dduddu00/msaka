@@ -4,7 +4,7 @@ pipeline {
     stage('this is test dragon') {
       steps {
         sh '''
-        cat "꺾뀌꺾뀌 팔꺾꾸끼"
+        echo 꺾뀌꺾ㄲ뀌 팔꺾ㄲ뀌
         
         '''
       }
