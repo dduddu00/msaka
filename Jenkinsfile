@@ -1,6 +1,14 @@
 pipeline {
   agent any
   stages {
+    stage('this is test dragon') {
+      steps {
+        sh '''
+        cat "여기에 양식을 맞춰서 하시오 {} 항상 개수 세보기"
+        
+        '''
+      }
+    }
    stage('docker build') {
       steps {
         sh '''
