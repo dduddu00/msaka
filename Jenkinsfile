@@ -32,7 +32,7 @@ pipeline {
                }
            }
         }
-   /*  
+ 
    stage('main img push') {
       steps {
         sh '''
@@ -60,7 +60,6 @@ pipeline {
         '''
       }
     }
-  */
   
    stage('k8s apply') {
       steps {
