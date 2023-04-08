@@ -49,7 +49,6 @@ pipeline {
    stage('k8s apply') {
       steps {
         sh '''
-        kubectl delete -f main.yml -f board.yml -f product.yml
         kubectl apply -f main.yml -f board.yml -f product.yml
         '''
       }
