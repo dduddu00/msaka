@@ -28,7 +28,7 @@ pipeline {
         script{
            docker.withRegistry("https://" + registry1, "ecr:ap-northeast-2:" + registryCredential1) {
              // withRegistry(이미지 올릴 ECR 주소, Credentail ID) 이렇게 셋팅하면 된다.
-           app.push("latest")       // tag 정보
+           app1.push("latest")       // tag 정보
                }
            }
          }
