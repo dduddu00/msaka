@@ -19,17 +19,18 @@ pipeline {
         docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-board:latest
         docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-product:latest
         
+        
+        
         '''
       }
     }
    stage('main img push') {
       steps {
-        sh '''
-        docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        '''
-      }
+          docker.withRegistry("https://582858263322.dkr.ecr.ap-northeast-2.amazonaws.com", "ecr:ap-northeast-2:" + "Happydraw")     {
+         
+          docker.image("582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main:latest").push()       // tag 정보
+               }
+       }
     }
    stage('product img push') {
       steps {
