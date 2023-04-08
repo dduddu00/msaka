@@ -26,11 +26,12 @@ pipeline {
     }
    stage('main img push') {
       steps {
+        script{
           docker.withRegistry("https://582858263322.dkr.ecr.ap-northeast-2.amazonaws.com", "ecr:ap-northeast-2:" + "Happydraw")     {
-         
           docker.image("582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main:latest").push()       // tag 정보
                }
-       }
+           }
+         }
     }
    stage('product img push') {
       steps {
