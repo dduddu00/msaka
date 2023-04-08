@@ -18,7 +18,7 @@ pipeline {
    stage('Docker Build') {
        steps {
          script {
-                 app1 = docker.build("happydraw-board:latest", "-f Dockerfile-b")
+                 app1 = docker.build("happydraw-board:latest", "-f Dockerfile-b .")
                 }
             }
         }
