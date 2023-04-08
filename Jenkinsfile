@@ -14,7 +14,7 @@ pipeline {
       steps {        
 	sh '''
 	sudo docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        sudo aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
+        sudo aws ecr get-login-password --region ap-northeast-2| docker login --username AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         sudo docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         '''
       }
