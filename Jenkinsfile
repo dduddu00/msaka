@@ -31,7 +31,8 @@ pipeline {
            app.push("latest")       // tag 정보
                }
            }
-        }
+         }
+       }
  
    stage('main img push') {
       steps {
