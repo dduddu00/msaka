@@ -4,7 +4,7 @@ pipeline {
     stage('this is test dragon') {
       steps {
         sh '''
-        echo asdf
+        echo asdfsfefwe
         '''
       }
     }
