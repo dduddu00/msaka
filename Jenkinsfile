@@ -4,18 +4,16 @@ pipeline {
    stage('docker build') {
       steps {
         sh '''
-        
         docker build -t main -f Dockerfile-m .
         docker build -t board -f Dockerfile-b .
         docker build -t product -f Dockerfile-p .
-        
         '''
       }
     }
    stage('main img push') {
       steps {        
-				docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
-        aws ecr get-login-password --region ap-northeast-2 | docker login --userneamee eAWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
+	docker tag main 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
+        aws ecr get-login-password --region ap-northeast-2 | docker login --userneamee AWS --password-stdin 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         docker image push 582858263322.dkr.ecr.ap-northeast-2.amazonaws.com/happydraw-main
         '''
       }
