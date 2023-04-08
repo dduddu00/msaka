@@ -67,8 +67,7 @@ pipeline {
         sh '''
         kubectl apply -f main.yml -f board.yml -f product.yml
         '''
-      }
+       }
+     }
     }
-   }
   }
-}
