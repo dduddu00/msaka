@@ -1,13 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('this is test dragon') {
-      steps {
-        sh '''
-        echo asdfsfefwe
-        '''
-      }
-    }
    stage('docker build') {
       steps {
         sh '''
