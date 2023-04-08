@@ -4,7 +4,7 @@ pipeline {
     stage('this is test dragon') {
       steps {
         sh '''
-        echo 꺾뀌꺾ㄲ뀌 팔꺾ㄲ뀌  
+        echo asdf
         '''
       }
     }
