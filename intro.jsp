@@ -89,7 +89,7 @@
             <br>
             <br>
             <h3>박성호</h3>
-            안녕하다 나는 Sung Ho Park 이다
+            안녕하다 나는 Sung Ho Park 다
             <br> 활기찬 아침 HappyDraw 다
         </div>
         <div style="width:600px; height:370px; float:left;">
